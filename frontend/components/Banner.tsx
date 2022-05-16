@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Banner() {
   return (
     <section className="w-full bg-white">
@@ -12,22 +14,26 @@ export default function Banner() {
               </h1>
               <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                 <div className="mt-3 rounded-lg sm:mt-0">
-                  <button
-                    className="items-center block px-5 py-4 text-base font-medium text-center text-black transition
-                    duration-500 ease-in-out transform bg-green-400 lg:px-10 rounded-xl hover:bg-green-500
+                  <Link href="/signup">
+                    <button
+                      className="items-center block px-5 py-4 text-base font-medium text-center text-black transition
+                    duration-500 ease-in-out transform bg-green-500 lg:px-10 rounded-xl hover:bg-green-600
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                  >
-                    <span className="font-bold">Sign Up</span>
-                  </button>
+                    >
+                      <span className="font-bold">Sign Up</span>
+                    </button>
+                  </Link>
                 </div>
                 <div className="mt-3 rounded-lg sm:mt-0 sm:ml-3">
-                  <button
-                    className="items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-black
+                  <Link href="/signin">
+                    <button
+                      className="items-center block px-5 lg:px-10 py-3.5 text-base font-medium text-center text-black
                     transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-                  >
-                    <span className="font-bold">Sign In</span>
-                  </button>
+                    >
+                      <span className="font-bold">Sign In</span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
